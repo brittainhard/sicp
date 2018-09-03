@@ -1,4 +1,3 @@
-(define (square x)
-  (* x x))
+(define (square x) (* x x))
 
-(display (square 2))
+(display (square 2)
