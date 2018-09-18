@@ -1,3 +1,6 @@
+;; With applicative order, this will run forever. With normal order, it will
+;; return 0.
+
 (define (p) (p))
 
 (define (test x y)
@@ -5,4 +8,4 @@
       0
       y))
 
-(display (test 0 (p))
+(display (test 0 (p)))
