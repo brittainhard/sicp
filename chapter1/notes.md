@@ -48,3 +48,32 @@ expression is evaluated. Hence, it hits p, which only returns itself, and runs
 forever.
 
 This is a test to determine what kind of interpreter, remember that.
+
+## 1,6,
+
+So I am thinking... Will it just return the function call? It's being sent
+through something that is not a special form. That might mean that it would
+react differently, but I would have to find somewhere in the text that says that
+special forms don't act like procedures. Your intuition tells you that there is
+no difference.
+
+So I cheated and ran the calculations myself and it recurs forever, and it hits
+a recusrion limit.
+
+I think the reason has something to do with applicative order. The hint is in
+the question -- Eva Lu Ator. This might explain how it happens, but why would
+this function call recur forever, while the regular if does not do that?
+
+When you call new-if, it sends the precise? function, the guess integer, and the
+root-iter function.
+
+I think the problem is that it never iterates. You are just calling root-iter
+with the same arguments over and over again.
+
+Actually, it does get to the correct value. Why?
+
+So I looked on stack overflow. The short answer is that it recurs because its a
+function call, and applicative order evaluation evaluates all the items.
+However, you are effectively running two recursive functions. new-if recurs on
+sqrt-iter, and sqrt-iter recurs on new-if.
+
