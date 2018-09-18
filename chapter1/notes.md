@@ -26,6 +26,15 @@ Math functions and computer functions are similar, because they specify a value
 based on parameters. However, math functions do not describe how to get to a
 value, only, or something...
 
+Procedures must be effective. Math procedures just describe what something is
+like. This is a difference between describing properties of things (math
+functions) and procedures for getting things (computer functions). Declarative
+vs. imperative. 
+
+Newton root uses averages, and averages x with x/y. If we are talking about
+applying this to other circumstances, can we just apply that average to all
+sorts of things? We can do cube root too. What else can we apply it to?
+
 # Exercises
 
 ## 1.5,
