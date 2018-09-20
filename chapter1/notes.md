@@ -49,7 +49,7 @@ forever.
 
 This is a test to determine what kind of interpreter, remember that.
 
-## 1,6,
+## 1.6,
 
 So I am thinking... Will it just return the function call? It's being sent
 through something that is not a special form. That might mean that it would
@@ -77,3 +77,4 @@ function call, and applicative order evaluation evaluates all the items.
 However, you are effectively running two recursive functions. new-if recurs on
 sqrt-iter, and sqrt-iter recurs on new-if.
 
+## 1.7,
