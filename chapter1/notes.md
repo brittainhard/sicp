@@ -78,3 +78,6 @@ However, you are effectively running two recursive functions. new-if recurs on
 sqrt-iter, and sqrt-iter recurs on new-if.
 
 ## 1.7,
+
+Somehow this is more efficient. The book isn't asking me to explain how it works
+better, but it does.
