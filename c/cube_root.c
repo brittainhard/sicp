@@ -3,7 +3,8 @@
 #define PRECISION 0.001
 
 double
-cube(double x) {
+cube(double x)
+{
     return x * x * x;
 }
 
