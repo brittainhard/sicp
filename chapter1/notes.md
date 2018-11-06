@@ -81,6 +81,11 @@ implements tail recursion.
 Footnote: Iterative procedures can be represented by register machines, but
 recursive process requires a stack. 
 
+## 1.2.2, Tree Recursion
+
+I don't think it's the case that you are always using tree recursion for fib
+numbers, just in this example, since it runs two separate fib calculations.
+
 # Exercises
 
 ## 1.5,
@@ -141,3 +146,4 @@ itself. When you do try to expand it, it just doesn't look right.
 ## 1.10,
 
 I hate this problem.
+

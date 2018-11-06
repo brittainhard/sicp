@@ -4,4 +4,4 @@
         (else (+ (fib (- n 1))
                  (fib (- n 2))))))
 
-(display (fib 6))
+(display (fib 4))
